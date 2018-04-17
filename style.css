@@ -1,0 +1,53 @@
+body {
+    width:50%;
+    margin:auto;
+}
+
+h1 {
+    font-family: "Sheriff", sans-serif;
+    margin-bottom: 11px;
+    margin-bottom: 0.7857142857rem;
+    font-weight: normal;
+    line-height: 1.25;
+    color: #00418c;
+}
+
+h2 {
+    font-family: "Sheriff", sans-serif;
+    margin-bottom: 11px;
+    margin-bottom: 0.7857142857rem;
+    font-weight: normal;
+    line-height: 1.25;
+    color: #00418c;
+}
+#logoWindesheim {
+    width:60%;
+    margin-top:10px;
+}
+
+#formSubmit {
+    margin-top:10px;
+}
+.formInputDiv {
+    width:70%;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top:50px;
+}
+
+.formInput {
+    margin-bottom: 10px;
+    position: absolute;
+    right: 50%;
+    width: 200px;
+}
+
+.formRow {
+    margin-bottom: 10px;
+}
+
+.formSelect {
+    position: absolute;
+    right:50%;
+    width:200px;
+}
