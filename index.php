@@ -125,12 +125,12 @@ if (isset($_POST['formSubmit'])) {
         );
         $mail->SMTPDebug = 0;                                   // Enable verbose debug output
         $mail->isSMTP();                                        // Set mailer to use SMTP
-        $mail->Host = 'smtp.gmail.com';                         // Specify main and backup SMTP servers
+        $mail->Host = '127.0.0.1';                              // Specify main and backup SMTP servers
         $mail->SMTPAuth = true;                                 // Enable SMTP authentication
         $mail->Username = '';                                   // SMTP username
-    $mail->Password = '';                                       // SMTP password
+        $mail->Password = '';                                   // SMTP password
         $mail->SMTPSecure = 'TLS';                              // Enable TLS encryption, `ssl` also accepted
-        $mail->Port = 587;                                      // TCP port to connect to
+        $mail->Port = 25;                                      // TCP port to connect to
 
         //Recipients
         $mail->setFrom('tomschelhaas@hotmail.com', '$vnaam');
