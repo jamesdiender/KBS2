@@ -123,7 +123,7 @@ if (isset($_POST['formSubmit'])) {
                 'allow_self_signed' => true
             )
         );
-        $mail->SMTPDebug = 2;                                   // Enable verbose debug output
+        $mail->SMTPDebug = 0;                                   // Enable verbose debug output
         $mail->isSMTP();                                        // Set mailer to use SMTP
         $mail->Host = '127.0.0.1';                              // Specify main and backup SMTP servers
         $mail->SMTPAuth = false;                                // Enable SMTP authentication
@@ -133,7 +133,7 @@ if (isset($_POST['formSubmit'])) {
         $mail->Port = 25;                                       // TCP port to connect to
 
         //Recipients
-        $mail->setFrom('noreply', '$vnaam');
+        $mail->setFrom('noreply@windesheim.nl', '$vnaam');
         $mail->addAddress($email);                              // Add a recipient
 
         //Content
