@@ -123,7 +123,7 @@ if (isset($_POST['formSubmit'])) {
                 'allow_self_signed' => true
             )
         );
-        $mail->SMTPDebug = 0;                                   // Enable verbose debug output
+        $mail->SMTPDebug = 2;                                   // Enable verbose debug output
         $mail->isSMTP();                                        // Set mailer to use SMTP
         $mail->Host = '127.0.0.1';                              // Specify main and backup SMTP servers
         $mail->SMTPAuth = false;                                // Enable SMTP authentication

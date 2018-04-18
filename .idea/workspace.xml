@@ -17,8 +17,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="111" column="6" lean-forward="false" selection-start-line="111" selection-start-column="6" selection-end-line="111" selection-end-column="6" />
+            <state relative-caret-position="600">
+              <caret line="125" column="28" lean-forward="false" selection-start-line="125" selection-start-column="28" selection-end-line="125" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -153,7 +153,7 @@
       <workItem from="1523960838438" duration="1404000" />
       <workItem from="1523974769474" duration="1324000" />
       <workItem from="1524040358618" duration="915000" />
-      <workItem from="1524046306078" duration="1242000" />
+      <workItem from="1524046306078" duration="1354000" />
     </task>
     <task id="LOCAL-00001" summary="Index.php added">
       <created>1523961007321</created>
@@ -190,11 +190,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524047215291</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Index.php added">
+      <created>1524047565454</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1524047565454</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22705000" />
+    <option name="totallyTimeSpent" value="22817000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -387,8 +394,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="111" column="6" lean-forward="false" selection-start-line="111" selection-start-column="6" selection-end-line="111" selection-end-column="6" />
+        <state relative-caret-position="600">
+          <caret line="125" column="28" lean-forward="false" selection-start-line="125" selection-start-column="28" selection-end-line="125" selection-end-column="28" />
           <folding />
         </state>
       </provider>
