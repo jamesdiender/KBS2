@@ -126,11 +126,11 @@ if (isset($_POST['formSubmit'])) {
         $mail->SMTPDebug = 2;                                   // Enable verbose debug output
         $mail->isSMTP();                                        // Set mailer to use SMTP
         $mail->Host = '127.0.0.1';                              // Specify main and backup SMTP servers
-        $mail->SMTPAuth = true;                                 // Enable SMTP authentication
-        $mail->Username = 'student';                                   // SMTP username
-        $mail->Password = 'WNK01';                                   // SMTP password
+        $mail->SMTPAuth = false;                                // Enable SMTP authentication
+        //$mail->Username = '';                                 // SMTP username
+        //$mail->Password = '';                                 // SMTP password
         $mail->SMTPSecure = 'TLS';                              // Enable TLS encryption, `ssl` also accepted
-        $mail->Port = 25;                                      // TCP port to connect to
+        $mail->Port = 25;                                       // TCP port to connect to
 
         //Recipients
         $mail->setFrom('tomschelhaas@hotmail.com', '$vnaam');
