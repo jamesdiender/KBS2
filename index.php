@@ -126,7 +126,7 @@ if ($_POST['formSubmit']) == true {
         );
         $mail->SMTPDebug = 0;                                   // Enable verbose debug output
         $mail->isSMTP();                                        // Set mailer to use SMTP
-        $mail->Host = '192.168.2.5';                              // Specify main and backup SMTP servers
+        $mail->Host = '127.0.0.1';                              // Specify main and backup SMTP servers
         $mail->SMTPAuth = false;                                // Enable SMTP authentication
         //$mail->Username = '';                                 // SMTP username
         //$mail->Password = '';                                 // SMTP password
