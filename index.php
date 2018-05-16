@@ -82,7 +82,8 @@
 <?php
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
-if ($_POST['formSubmit']) == true {
+var_dump $formSubmit;
+/* if ($_POST['formSubmit']) == true {
     $voornaam = $_POST['formVoornaam'];
 
     $tussenvoegsel = "";
@@ -149,5 +150,5 @@ if ($_POST['formSubmit']) == true {
     }
 
 
-}
+} */
 ?>
