@@ -134,7 +134,7 @@ if ($_POST['formSubmit']) == true {
         $mail->Port = 25;                                       // TCP port to connect to
 
         //Recipients
-        $mail->setFrom('noreply@windesheim.nl', 'Windesheim');
+        $mail->setFrom('noreply@windesheim.nl', '$vnaam');
         $mail->addAddress($email);                              // Add a recipient
 
         //Content
