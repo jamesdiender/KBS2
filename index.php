@@ -106,7 +106,7 @@ if (isset($_POST['formSubmit'])) {
     $opleidingen['Civiele Techniek'] = $url_cv;
 
     $messageGroet = "Beste " . $voornaam . " " .  $tussenvoegsel . " " . $achternaam . "<br><br>";
-    $messageTekst = "Leuk dat je ge&Iuml;nteresseerd bent in een opleiding bij Windesheim! We hebben je flyer(s) voor je klaargezet.<br><br>";
+    $messageTekst = "Leuk dat je ge&iuml;nteresseerd bent in een opleiding bij Windesheim! We hebben je flyer(s) voor je klaargezet.<br><br>";
     $messageOpleiding = "<a href='$opleidingen[$opleiding]'> Opleidingsflyer $opleiding";
     $message = $messageGroet . $messageTekst . $messageOpleiding;
     //echo $message;
