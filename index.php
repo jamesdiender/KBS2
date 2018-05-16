@@ -82,7 +82,6 @@
 <?php
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
-var_dump $formSubmit;
 if (isset($_POST['formSubmit'])) {
     $voornaam = $_POST['formVoornaam'];
 
