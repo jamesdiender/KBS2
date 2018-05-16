@@ -150,5 +150,5 @@ if (isset($_POST['formSubmit'])) {
 
 
 }
-echo gethostname();
+print("<br><br>Server: " .  gethostname());
 ?>
