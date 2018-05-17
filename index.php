@@ -83,7 +83,17 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 if (isset($_POST['formSubmit'])) {
-    $voornaam = $_POST['formVoornaam'];
+	$config = parse_ini_file("config.ini");
+
+		try {
+			$dbh = new PDO("mysql:"
+				. "host=" . $config["host"]
+				. ";port=" . $config["port"]
+				. ";dbname=" . $config["db"],
+			$config["username"], $config["password"]);
+		}
+			
+	$voornaam = $_POST['formVoornaam'];
 
     $tussenvoegsel = "";
     if (isset($_POST['formTussenvoegsel'])) {
@@ -147,7 +157,15 @@ if (isset($_POST['formSubmit'])) {
         echo 'Message could not be sent.';
         echo 'Mailer Error: ' . $mail->ErrorInfo;
     }
-
+	$stmt = $dbh->prepare("INSERT INTO Aanmelding ('voornaam', 'tussenvoegsel', 'achternaam', 'email', 'vooropleiding', 'afstudeerjaar', 'opleiding') VALUES (:voornaam, :tussenvoegsel, :achternaam, :email, :vooropleiding, :afstudeerjaar, :opleiding)");
+	$stmt->bindParam(":voornaam", $voornaam);
+	$stmt->bindParam(":tussenvoegsel", $tussenvoegsel);
+	$stmt->bindParam(":achternaam", $achternaam);
+	$stmt->bindParam(":email", $email);
+	$stmt->bindParam(":vooropleiding", $vooropleiding);
+	$stmt->bindParam(":afstudeerjaar", $afstudeerjaar);
+	$stmt->bindParam(":opleiding", $opleiding);
+	$stmt->execute();
 
 }
 print("<br><br>Server: " .  gethostname());
