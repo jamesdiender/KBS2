@@ -92,6 +92,10 @@ if (isset($_POST['formSubmit'])) {
 				. ";dbname=" . $config["db"],
 			$config["username"], $config["password"]);
 		}
+		catch(PDOException $e) {
+			echo "Failed to connect to database";
+			exit;
+		}
 			
 	$voornaam = $_POST['formVoornaam'];
 
