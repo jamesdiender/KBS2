@@ -85,17 +85,17 @@ use PHPMailer\PHPMailer\Exception;
 if (isset($_POST['formSubmit'])) {
 	$config = parse_ini_file("config.ini");
 
-		try {
+		//try {
 			$dbh = new PDO("mysql:"
 				. "host=" . $config["host"]
 				. ";port=" . $config["port"]
 				. ";dbname=" . $config["db"],
 			$config["username"], $config["password"]);
-		}
-		catch(PDOException $e) {
+		//}
+		/* catch(PDOException $e) {
 			echo "Failed to connect to database";
 			exit;
-		}
+		} */
 			
 	$voornaam = $_POST['formVoornaam'];
 
