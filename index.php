@@ -161,7 +161,7 @@ if (isset($_POST['formSubmit'])) {
         echo 'Message could not be sent.';
         echo 'Mailer Error: ' . $mail->ErrorInfo;
     }
-	$stmt = $dbh->prepare("INSERT INTO Aanmelding ('voornaam', 'tussenvoegsel', 'achternaam', 'email', 'vooropleiding', 'afstudeerjaar', 'opleiding') VALUES (:voornaam, :tussenvoegsel, :achternaam, :email, :vooropleiding, :afstudeerjaar, :opleiding)");
+	$stmt = $dbh->prepare("INSERT INTO Aanmelding ('voornaam', 'tussenvoegsel', 'achternaam', 'email', 'vooropleiding', 'afstudeerjaar', 'opleiding') VALUES (:voornaam, :tussenvoegsel, :achternaam, :email, :vooropleiding, :afstudeerjaar, :opleiding);");
 	$stmt->bindParam(":voornaam", $voornaam);
 	$stmt->bindParam(":tussenvoegsel", $tussenvoegsel);
 	$stmt->bindParam(":achternaam", $achternaam);
@@ -170,6 +170,10 @@ if (isset($_POST['formSubmit'])) {
 	$stmt->bindParam(":afstudeerjaar", $afstudeerjaar);
 	$stmt->bindParam(":opleiding", $opleiding);
 	$stmt->execute();
+	
+	$dbh = NULL;
+	$stmt = NULL;
+	
 
 }
 print("<br><br>Server: " .  gethostname());
